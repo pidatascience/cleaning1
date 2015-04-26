@@ -1,8 +1,10 @@
+# Import required libraries
 library(dplyr)
 library(reshape)
 library(reshape2)
 library(data.table)
 
+# Set up environment
 CURDIR <- getwd()
 PROJDIR <- "E:\\Documents\\Projects\\R\\Getting and Cleaning Data\\Project"
 ZIPURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -12,6 +14,8 @@ if (! file.exists(ZIPFILE)) download.file(url = ZIPURL, destfile = ZIPFILE)
 unzip(zipfile = ZIPFILE, overwrite = T)
 setwd("UCI HAR Dataset")
 
+# Process data
+## Process ancilliary data
 activities <- read.table(file = "activity_labels.txt", 
                          sep = " ", 
                          header = F,
@@ -27,6 +31,7 @@ features <- mutate(features,
                                      "NULL"), 
                    width = 16)
 
+## Set up data IO routine
 read.data <- function(data.set, data.n = -1) {
   targetdata <- read.fwf(file = paste(data.set, "\\X_", data.set, ".txt", sep = ""), 
                          n = data.n, 
@@ -46,10 +51,13 @@ read.data <- function(data.set, data.n = -1) {
   return(targetdata)
 }
 
-read.data.test <- function(data.set) read.data(data.set, 50)
-
+## FP reading and merging of the data
 data.union.raw <- do.call(rbind, lapply(c("test", "train"), read.data))
+## Summarize by subject
 data.union.summary <- aggregate(. ~ subject, data.union.raw, mean)
+## Write output file
 setwd("..")
 write.table(data.union.summary, "wearablecomputing.txt", row.names = F)
+
+# Clean up
 setwd(CURDIR)
