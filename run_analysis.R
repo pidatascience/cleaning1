@@ -15,7 +15,7 @@ unzip(zipfile = ZIPFILE, overwrite = T)
 setwd("UCI HAR Dataset")
 
 # Process data
-## Process ancilliary data
+## Process ancillary data
 activities <- read.table(file = "activity_labels.txt", 
                          sep = " ", 
                          header = F,
