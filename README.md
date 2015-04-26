@@ -28,10 +28,10 @@ Of these, the only one adding any true value is 'Process Data' and is in turn di
 
 ### Process ancillary data
 This section produces two small data frames called activities and features which load data from the appropriate files in the top level directory. These data frames are temporary and only serve to label columns (features) and populate the column activities (activities) row of the final frame.
-The features data frame is augmented with the following columns for convenience in data IO in the next section:
+The features data frame is augmented with the following columns useful for data IO in the next section:
   * colclass: Contains NA for all average and standard deviation column names, and "NULL" otherwise. Please refer to the documentation of the colclasses parameter of read.fwf/read.table methods for information on the meaning of these values:
   * width: set at a constant 16 representing the number of characters for each column in fixed witdth format.
-  * 
+
 ### Set up Data IO routine
 This is the main section of the script. It leverages the fact that the directory and file structure for test and train data sets is identical with the sole difference of the names "train" and "test" labeling each directory and file.
 A function read.data is defined taking as parameters both the name of the set (data.set) and a max number of records to extract from each set (data.n). This last parameter is included only for troubleshooting puposes and will be ignored in descriptions going forward.
