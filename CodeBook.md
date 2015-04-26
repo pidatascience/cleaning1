@@ -4,7 +4,7 @@ The features included in the data proccessed by [run_analysis.R](https://github.
 
 The following is the complete list of features in the complete data set where every feature represents the average across all values of the feature of the same name from the raw data set for a given subject. All descriptions and units match their respective values from the raw data set.
 
-'''
+```
 tBodyAcc-mean()-X
 tBodyAcc-mean()-Y
 tBodyAcc-mean()-Z
@@ -84,4 +84,4 @@ fBodyBodyGyroMag-meanFreq()
 fBodyBodyGyroJerkMag-mean()
 fBodyBodyGyroJerkMag-std()
 fBodyBodyGyroJerkMag-meanFreq()
-'''
+```
