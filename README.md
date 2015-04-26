@@ -1,12 +1,12 @@
 # Wearable Computing
 ## General Description
-This repo holds all code and documentation related to the project course assignment for Coursera's [[https://class.coursera.org/getdata-013/human_grading/view/courses/973500/assessments/3/submissions][Getting and Cleaning Data]] MOOC.
+This repo holds all code and documentation related to the project course assignment for Coursera's [[Getting and Cleaning Data][https://class.coursera.org/getdata-013/human_grading/view/courses/973500/assessments/3/submissions]] MOOC.
 
 ## General file layout
 There are 3 main files in the repository:
-* [[https://github.com/pidatascience/wearablecomputing/blob/master/run_analysis.R][run_analysis.R]] holds the R code required to build the output data frame as described in the code book
-* [[https://github.com/pidatascience/wearablecomputing/blob/master/CodeBook.md][CodeBook.md]] describes all variables of the output data frame.
-* [[https://github.com/pidatascience/wearablecomputing/blob/master/README.md][README.md]] documents the repository and purpose of the R files
+* [[run_analysis.R][https://github.com/pidatascience/wearablecomputing/blob/master/run_analysis.R]] holds the R code required to build the output data frame as described in the code book
+* [[CodeBook.md][https://github.com/pidatascience/wearablecomputing/blob/master/CodeBook.md]] describes all variables of the output data frame.
+* [[README.md][https://github.com/pidatascience/wearablecomputing/blob/master/README.md]] documents the repository and purpose of the R files
 
 ## Running
 To generate the output files, simply run file run_analysis.R. The following requiremets need to be met before running the file:
