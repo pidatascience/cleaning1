@@ -18,7 +18,7 @@ To generate the output files, simply run file run_analysis.R. The following requ
   * Active Internet connection (optional, see below)
 
 If you already have a copy of the data available you can place it in the current R working directory with name "data.zip", this will prevent the script from re-downloading and may be useful in environments with limited Internet connectivity.
-The output of the script will be a file called wearablecomputing.txt described in [[https://github.com/pidatascience/wearablecomputing/blob/master/CodeBook.md][CodeBook.md]]
+The output of the script will be a file called wearablecomputing.txt described in [CodeBook.md](https://github.com/pidatascience/wearablecomputing/blob/master/CodeBook.md)
 
 ## run_analysis.R
 There are 3 main sections to the file:
