@@ -2,7 +2,10 @@
 
 The features included in the data proccessed by [run_analysis.R](https://github.com/pidatascience/wearablecomputing/blob/master/run_analysis.R) have been computed from the [raw data](https://github.com/pidatascience/wearablecomputing/blob/master/RawCodeBook.md) according to the general instructions provided in the [README](https://github.com/pidatascience/wearablecomputing/blob/master/README.md).
 
-The following is the complete list of features in the complete data set where every feature represents the average across all values of the feature of the same name from the raw data set for a given subject. All descriptions and units match their respective values from the raw data set.
+The following is the complete list of features in the output data set, where:
+
+* Every feature represents the average across all values of the feature of the same name from the raw data set for a given subject. 
+* All descriptions and units match their [respective values](https://github.com/pidatascience/wearablecomputing/blob/master/RawCodeBook.md) from the raw data set.
 
 ```
 tBodyAcc-mean()-X
