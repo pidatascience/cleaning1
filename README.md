@@ -45,7 +45,7 @@ The rest of the routine adds subject data from file "subject_(data.set).txt" as 
 ### FP reading and merging of the data
 Given the routine in the previous section we can think of the final data frame as the result of  merging of all the returned data frames from succesive applications of routine read.data.
 
-This is achieved with a bit of Functional Programming reasoning and the help of the do.call and lapply functions.
+This is achieved with a bit of functional reasoning and the help of the do.call and lapply functions.
 
 ### Summarize by subject
 We summarize the data frame in the previous section using a function call to aggregate where we achieve a tapply across all columns aggregating on the subject column using average summarization as requested
